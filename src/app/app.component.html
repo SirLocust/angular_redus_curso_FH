@@ -1,28 +1,43 @@
-
-
 <div class="row text-center">
   <div class="col">
     <h1>Contador</h1>
-    <h2 > {{contador}}</h2>
+    <h2>{{ contador }}</h2>
   </div>
 </div>
 
 <div class="row text-center">
   <div class="col">
-    <button  type="button" name="" id="" class="btn btn-primary mr-2" (click)="incrementar()" >Aumentar</button>
-
-    <button *ngIf="contador > 0" 
-     type="button" name="" id="" class="btn btn-info "  (click)="decrementar()" >
-     Decrementar
+    <button
+      type="button"
+      name=""
+      id=""
+      class="btn btn-primary mr-2"
+      (click)="incrementar()"
+    >
+      Aumentar
     </button>
 
+    <button
+      *ngIf="contador > 0"
+      type="button"
+      name=""
+      id=""
+      class="btn btn-info"
+      (click)="decrementar()"
+    >
+      Decrementar
+    </button>
   </div>
 </div>
 
-<hr>
+<hr />
 
 <div class="row text-center">
   <div class="col">
-    <app-hijo [contador]="contador" (cambioContador)="contador = $event"></app-hijo>
+    <app-hijo
+      [contador]="contador"
+      (cambioContador)="contador = $event"
+    ></app-hijo>
   </div>
 </div>
+ 

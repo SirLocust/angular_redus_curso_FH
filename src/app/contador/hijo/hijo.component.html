@@ -1,5 +1,5 @@
 
-<h3>COntador</h3>
+<h3>Contador</h3>
 <h4>{{contador }}</h4>
 
 
@@ -8,5 +8,13 @@
         <button class="btn btn-danger mr-2" (click)="multiplicar()">multiplicar </button>
         <button class="btn btn-warning" (click)="dividir()">dividir </button>
         
+    </div>
+</div>
+
+<hr>
+
+<div class="row">
+    <div class="col">
+        <app-nieto [contador]="contador" (reset)="resetNieto($event)"></app-nieto>
     </div>
 </div>
