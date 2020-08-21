@@ -11,5 +11,6 @@ export class IncrementarAction implements Action{
 
 export class DecrementarAction implements Action{
     readonly type = DECREMENTAR;
-     
 }
+
+
