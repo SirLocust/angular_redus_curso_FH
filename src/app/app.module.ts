@@ -19,7 +19,7 @@ import { NietoComponent } from './contador/nieto/nieto.component';
     AppComponent,
     HijoComponent,
     NietoComponent,
-   
+    
   ],
   imports: [
     BrowserModule,
@@ -27,7 +27,7 @@ import { NietoComponent } from './contador/nieto/nieto.component';
     StoreModule.forRoot({ contador: contadorReducer}),
     StoreDevtoolsModule.instrument({
       maxAge: 25,
-      logOnly: environment.production,
+      logOnly: environment.production
     })
   ],
   providers: [],
